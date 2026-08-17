@@ -1,3 +1,4 @@
+
 # **MisNotas**
 
 ## Software Requirements Specification
@@ -64,7 +65,7 @@ MisNotas is a web-based academic performance management system that allows users
 
 The main problem addressed by MisNotas is the need for students to manually create and maintain systems for tracking their academic performance. These systems are often implemented as spreadsheets containing manually created formulas for calculating grades and averages. These systems generally focus on storing and calculating the values entered by the user, without providing tools for setting academic goals, generating projections, determining the grades required on remaining work, or evaluating progress toward those goals. Also, manually maintained systems can become difficult to manage when the academic structure changes: adding, modifying, or removing subjects and assessment components may require the user to manually update the structure and formulas of the system. MisNotas addresses these limitations by providing an accessible system in which academic information can be managed dynamically while calculations, projections, goals, and progress are handled automatically.
 
-### 2.3. Product Objectives 
+### 2.3. Product Objectives
 
 MisNotas aims to:
 
@@ -90,5 +91,36 @@ The primary target users of MisNotas are students who want to organize and monit
 * **Simplicity:** The system should present academic performance, projections, goals, and warnings in a way that is easy for users to understand.
 
 ## 3. System Scope
+
+### 3.1. In Scope
+
+* User account management
+* Academic period management
+* Subject management
+* Assessment component management
+* Assessment groups
+* Grade management
+* Subject goals
+* Academic-period goals
+* Grade calculations
+* Grade projections
+* Required-grade calculations
+* Subject at-risk detection
+* Goal progress tracking
+* Subject and academic period performance reports
+* Historical performance
+* Credit-weighted comparisons
+* Dynamic recalculation of dependent results when academic data is added, modified, or deleted
+* Persistent storage of user academic data
+
+### 3.2. Out of Scope
+
+- AI agents or autonomous AI-based functionality
+- Requiring users to manually calculate grades, averages, projections, or other metrics that MisNotas is designed to calculate automatically
+- Automatic retrieval/synchronization of grades from university/school platforms
+- Integration with external learning management systems (LMS) or university information systems
+- Institutional academic administration
+- Social features between users
+- AI-generated academic advice
 
 ## 4. Functional Requirements
