@@ -1,0 +1,387 @@
+
+:root {
+  --primary:     #312e81;  
+  --bg:          #13123e;   /* page background */
+  --bg-card:     linear-gradient(180deg, #312E81 0%, #221F5E 100%);   /* card background */
+  --bg-footer:   linear-gradient(90deg,  #3230A4 0%, #22206F 100% ); /* footer background */
+  --accent:      #FFE167;   /* yellow accent */
+  --accent-soft: #f5c40033; /* yellow tint (progress track) */
+  --text:        #ffffff;
+  --text-muted:  #e7e7e7;
+  --divider:     #ffffff18;
+  --radius:      12px;
+  --radius-sm:   8px;
+}
+
+/* ── Base ──────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  min-height: 100vh;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════════════════════════ */
+.mn-navbar {
+  background-color: var(--primary);
+  border-bottom: 1px solid var(--divider);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-toggler {
+    filter: invert(1);
+}
+
+/* Brand */
+.mn-brand-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.mn-brand-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+  text-shadow: 0 0 4px #000;
+}
+
+/* Nav links */
+.mn-nav-links {
+  gap: 2rem !important;
+}
+
+.mn-nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  transition: color 0.2s;
+}
+
+.mn-nav-link:hover {
+  color: var(--accent);
+}
+
+/* User badge */
+.mn-nav-user {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   MAIN
+════════════════════════════════════════════════════════════ */
+.mn-main {
+  padding: 48px 0 64px;
+}
+
+
+/* ── Greeting ──────────────────────────────────────────────── */
+.mn-greeting-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin: 0 0 6px;
+  letter-spacing: -0.02em;
+}
+
+.mn-greeting-sub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight:600;
+}
+
+
+/* ── Generic card ──────────────────────────────────────────── */
+.mn-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+
+/* ── Stat cards ────────────────────────────────────────────── */
+.mn-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 28px 24px;
+}
+
+.mn-stat-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.mn-stat-value {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+}
+
+
+/* ── Section headings ──────────────────────────────────────── */
+.mn-section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 4px;
+  letter-spacing: -0.02em;
+}
+
+.mn-section-period {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 600;
+}
+
+
+/* ── Subjects card ─────────────────────────────────────────── */
+
+
+.mn-subjects-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.mn-subject-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 24px;
+  gap: 16px;
+}
+
+.mn-subject-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.mn-subject-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.mn-grade-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.mn-grade-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.mn-subject-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.mn-goal-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.mn-goal-label strong {
+  color: var(--accent);
+}
+
+.mn-divider {
+  margin: 0;
+  border-color: var(--divider);
+  opacity: 1;
+}
+
+
+/* ── Status badge ──────────────────────────────────────────── */
+.mn-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.mn-status--track {
+  background-color: #1a3a5c;
+  color: #60b4ff;
+}
+
+.mn-status--achieved {
+  background-color: #1a3a2a;
+  color: #4fd97a;
+}
+
+
+/* ── Progress bar ──────────────────────────────────────────── */
+.mn-progress-bar {
+  height: 4px;
+  background-color: var(--accent-soft);
+  border-radius: 99px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+}
+
+.mn-subject-left .mn-progress-bar {
+  max-width: 100%;
+}
+
+.mn-progress-fill {
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: 99px;
+  transition: width 0.5s ease;
+}
+
+
+/* ── Goal cards ────────────────────────────────────────────── */
+.mn-goal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 32px 24px 24px;
+}
+
+.mn-goal-tier {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.mn-goal-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.mn-goal-target {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.mn-goal-projected {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.mn-goal-card .mn-progress-bar {
+  max-width: 100%;
+  width: 100%;
+}
+
+.mn-goal-congrats {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+
+/* ════════════════════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════════════════════ */
+.mn-footer {
+  background: var(--bg-footer);
+  border-top: 1px solid var(--divider);
+  padding: 40px 0 24px;
+}
+
+.mn-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--divider);
+  margin-bottom: 20px;
+}
+
+.mn-footer-brand .mn-brand-name {
+  font-size: 2.5rem;
+  color: var(--accent);
+}
+
+.mn-footer-tagline {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Contact */
+.mn-contact-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+}
+
+.mn-contact-line {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+.mn-contact-key {
+  color: var(--accent);
+  font-weight: 600;
+  margin-right: 4px;
+
+  
+}
+
+.phones-and-emails {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Copyright */
+.mn-footer-copy {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+
