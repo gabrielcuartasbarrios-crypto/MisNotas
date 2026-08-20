@@ -9,3 +9,4 @@ _**Currently in development**_
 #### Milestones:
 
 1. SRS done: August 17th, 2026
+2. Dashboard design done: August 20th, 2026
