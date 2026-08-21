@@ -10,3 +10,4 @@ _**Currently in development**_
 
 1. SRS done: August 17th, 2026
 2. Dashboard design done: August 20th, 2026
+3. Database created: August 21st, 2026
