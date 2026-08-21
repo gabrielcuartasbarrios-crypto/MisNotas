@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MisNotas – Not just a grade tracker.</title>
 
-    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-
-    <!-- Custom styles -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +19,7 @@
 </head>
 
 <body>
-
-    <!-- ═══════════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════════ -->
-
+    
     <nav class="mn-navbar navbar navbar-expand-xxl">
         <div class="container">
             <a href="#" class="mn-brand d-flex align-items-center gap-2 text-decoration-none">
@@ -56,20 +50,14 @@
         </div>
     </nav>
 
-
-    <!-- ═══════════════════════════════════════════
-       MAIN CONTENT
-  ═══════════════════════════════════════════ -->
     <main class="mn-main">
         <div class="container-xl">
 
-            <!-- Greeting -->
             <section class="mn-greeting mb-4">
                 <h1 class="mn-greeting-title">Good afternoon, Gabriel</h1>
                 <p class="mn-greeting-sub">Here's how you're doing this academic period.</p>
             </section>
 
-            <!-- Stat cards -->
             <section class="mn-stats mb-5">
                 <div class="row g-3">
                     <div class="col-12 col-md-4">
@@ -94,14 +82,12 @@
             </section>
 
 
-            <!-- ───── My Subjects ───── -->
             <section class="mn-subjects mb-5">
                 <h2 class="mn-section-title">My Subjects</h2>
                 <p class="mn-section-period">Current Academic Period: 2026-2</p>
 
                 <div class="mn-card mn-subjects-card mt-3">
 
-                    <!-- Subject row -->
                     <div class="mn-subject-row">
                         <div class="mn-subject-left">
                             <span class="mn-subject-name">Matemáticas Aplicadas II</span>
@@ -121,7 +107,6 @@
 
                     <hr class="mn-divider" />
 
-                    <!-- Subject row -->
                     <div class="mn-subject-row">
                         <div class="mn-subject-left">
                             <span class="mn-subject-name">Algoritmos y Programación II</span>
@@ -141,7 +126,7 @@
 
                     <hr class="mn-divider" />
 
-                    <!-- Subject row -->
+
                     <div class="mn-subject-row">
                         <div class="mn-subject-left">
                             <span class="mn-subject-name">Ingeniería de Software II</span>
@@ -163,14 +148,11 @@
             </section>
 
 
-            <!-- ───── My Academic Goals ───── -->
             <section class="mn-goals mb-5">
                 <h2 class="mn-section-title">My Academic Goals</h2>
                 <p class="mn-section-period">Current Academic Period: 2026-2</p>
 
                 <div class="row g-3 mt-2">
-
-
                     <div class="col-12 col-md-4">
                         <div class="mn-card mn-goal-card">
                             <span class="mn-goal-tier">Lista de Honor</span>
@@ -216,18 +198,13 @@
                 </div>
             </section>
 
-        </div><!-- /container-xl -->
+        </div>
     </main>
 
-
-    <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
     <footer class="mn-footer">
         <div class="container-xl">
             <div class="mn-footer-inner">
 
-                <!-- Brand -->
                 <div class="mn-footer-brand">
                     <a href="#" class="d-flex align-items-center gap-2 text-decoration-none">
                         <img src="assets/images/logo_footer.svg" alt="MisNotas logo" class="mn-brand-icon" />
@@ -238,7 +215,6 @@
                     </a>
                 </div>
 
-                <!-- Contact -->
                 <div class="mn-footer-contact">
                     <p class="mn-contact-heading">CONTACT US</p>
                     <p class="mn-contact-line">
@@ -247,9 +223,10 @@
                         <a class="phones-and-emails" href="tel:+573178862778">+57 317 886 2778</a>
                     </p>
                     <p class="mn-contact-line">
-                        <span class="mn-contact-key">Support e-mail:</span> 
-                        <a class="phones-and-emails" href="mailto:gabriel.cuartasbarrios@gmail.com">gabriel.cuartasbarrios@gmail.com</a> <br/>
-                        <a class="phones-and-emails" href="mailto:santiagomanu41@gmail.com">santiagomanu41@gmail.com</a> 
+                        <span class="mn-contact-key">Support e-mail:</span>
+                        <a class="phones-and-emails"
+                            href="mailto:gabriel.cuartasbarrios@gmail.com">gabriel.cuartasbarrios@gmail.com</a> <br />
+                        <a class="phones-and-emails" href="mailto:santiagomanu41@gmail.com">santiagomanu41@gmail.com</a>
                     </p>
                 </div>
 
@@ -261,7 +238,6 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
